@@ -16,3 +16,10 @@ class LoginPageLocators():
     PASSWORD_REGISTER_FIELD = (By.CSS_SELECTOR, '[name="registration-password1"]')
     VALID_EMAIL = ("correct email")
 
+class ProductPageLocators(BasePage):
+    ADD_TO_BASKET_BUTTON = (By.ID, "add_to_basket_form")
+    PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main > .price_color")
+    LINK_PRODUCT_PAGE = ("http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019")
+    BASKET_PRICE = (By.CSS_SELECTOR, ".alert-info > .alertinner  > p > strong")
+    PRODUCT_NAME_IN_BASKET = (By.CSS_SELECTOR, ".alert-success:nth-child(1) > .alertinner  > strong")
+    PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main > h1")
